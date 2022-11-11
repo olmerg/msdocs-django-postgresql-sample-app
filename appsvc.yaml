@@ -1,7 +1,7 @@
 version: 1
 
 pre-build: | 
-    apt install curl binutils libproj-dev gdal-bin -y
+    sudo apt install curl binutils libproj-dev gdal-bin -y
   
 post-build: | 
     python manage.py makemigrations 
